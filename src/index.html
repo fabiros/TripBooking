@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Trip Booking</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <script src="https://cdn.datedropper.com/get/zln6yhfcqtrlv7qay1isa7pf7sc11i7m"></script> <!-- For Later Work-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="scss/style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">TripBooking.example</a>
+            <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Hotels</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Appartments</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Hostel</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container trip-search">
+        <i class="fas fa-times"></i> <!-- Close Button -->
+        <h5>Find ideal trip deals</h5>
+        <form class="form-inline">
+            <input type="text" name="trip_dest" id="trip_dest" class="form-control" placeholder="Trip Destination">
+            <div class="column">
+                <input type="date" name="trip_dest" id="trip_dest" class="form-control" placeholder="Trip Destination">
+                <i class="far fa-calendar-alt"></i>
+            </div>
+            <div class="column">
+                <input type="date" name="trip_dest" id="trip_dest" class="form-control" placeholder="Trip Destination">
+                <i class="far fa-calendar-alt"></i>
+            </div>
+            <button type="button" class="btn btn-primary">Search</button>
+        </form>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <i class="fas fa-times"></i> <!-- Close Button -->
+        </div>
+        <div class="row">
+            <div class="column">
+                <img height="100px" src="../img/austria_farm.jpg" alt="Austrian Farm">
+            </div>
+            <div class="column">
+                <div class="column">
+                    <h4>Summerholiday sales</h4>
+                </div>
+                <div class="column">
+                    <p>Visit Austria with 15% off stays between 1.July and 31.August</p>
+                </div> 
+                <div class="column">
+                    <button type="button" class="btn btn-outline-primary">VIEW DEALS</button>
+                </div> 
+                <div class="column"></div> <!-- APPEND TEXT FOR AUSTRIA OR LINK TO OWN WEBSITE-->
+            </div>
+        </div> 
+    </div>
+
+    <div class="container">
+        <h3>What are you looking for</h3>
+        <div class="row justify-content-around">
+            <div class="column">
+                <img width="300px" src="../img/hotel.jpg" alt="Hotel">
+                <h5>Hotels</h5>
+                <p>3012 Hotels</p> <!-- Must be changed dynamically later -->
+            </div>
+            <div class="column">
+                <img width="300px" src="../img/appartment.jpg" alt="Hotel">
+                <h5>Appartments</h5>
+                <p>2456 Appartments</p> <!-- Must be changed dynamically later -->
+            </div>
+            <div class="column">
+                <img width="300px" src="../img/hostel.jpg" alt="Hotel">
+                <h5>Hostels</h5>
+                <p>233 Hostels</p> <!-- Must be changed dynamically later -->
+            </div>
+        </div>  
+    </div>
+
+    <div class="container">
+        <h3>Next trip inspiration</h3>
+        <div class="row">
+            <div class="card-columns">
+                <div class="card" id="card1">
+                    <div class="card-body">
+                        <h4 class="card-title">Disneyland Paris</h4>
+                        <p class="card-text">Enjoy many attractions and meet your Disney heros</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body" id="card2">
+                        <h4 class="card-title">Camping in Colarado</h4>
+                        <p class="card-text">Feel the wildness. Camp near lake Granby and experience adventures up close</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body" id="card3">
+                        <h4 class="card-title">Beach trip Croatia</h4>
+                        <p class="card-text">Relax and charge positivity at Quenn's Beach, Nin</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="card-columns">
+                <div class="card" id="card4">
+                    <div class="card-body">
+                        <h4 class="card-title">Frequency Festival</h4>
+                        <p class="card-text">Experience famous artists from around the globe at one of Austria's biggest festivals</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body" id="card5">
+                        <h4 class="card-title">Fishing Hessendorf</h4>
+                        <p class="card-text">Witness the joy of fishing by yourself in this one day excursion</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<footer>
+    <p>Copyright © 2019 fabiros. All rights reserved.</p>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="js/script.js"></script>
+</html>
